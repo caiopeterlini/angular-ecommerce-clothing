@@ -1,0 +1,18 @@
+.footer {
+  font-size: 0.9rem;
+  background-color: #e4e6eb;
+  color: #333;
+
+  a:hover {
+    color: #5f7a87;
+  }
+
+  i {
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+
+  i:hover {
+    color: #5f7a87;
+  }
+}

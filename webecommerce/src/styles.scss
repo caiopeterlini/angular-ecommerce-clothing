@@ -1,1 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #f9f9f4;        /* off-white */
+  --color-secondary: #98d1b5;      /* verde Mintt */
+  --color-secondary-dark: #7bb398; /* verde Mintt escurecido */
+  --color-muted: #d1d1d1;
+  --color-dark: #2e2e2e;
+  --color-light-text: #ffffff;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-secondary); /* fundo verde */
+  color: var(--color-dark);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-secondary-dark);
+  }
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.btn-outline-light.icon-btn {
+  color: var(--color-dark); /* cor padrão escura */
+  font-size: 1.2rem;
+
+  i {
+    color: var(--color-dark);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--color-primary);         /* off-white */
+    color: var(--color-secondary-dark) !important;  /* verde escuro */
+  }
+
+  &:hover i,
+  &:focus i,
+  &:active i {
+    color: var(--color-secondary-dark) !important;  /* verde escuro */
+  }
+}
+
+
